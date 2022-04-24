@@ -57,6 +57,6 @@ button.onclick = () => player.togglePlay();
 
 if('serviceWorker' in navigator){
     navigator.serviceWorker.register('/sw.js').catch(error => {
-        console.message(error);
+        console.log(error.message);
     });
 }
